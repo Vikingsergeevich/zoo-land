@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Orders"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "total_price": {
+      "type": "decimal",
+      "required": true
+    },
+    "products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "inversedBy": "orders"
+    },
+    "order_status": {
+      "type": "enumeration",
+      "enum": [
+        "Pending",
+        "Paid",
+        "Shipped",
+        "Delivered",
+        "Cancelled"
+      ],
+      "default": "Pending"
+    },
+    "order_created_at": {
+      "type": "datetime",
+      "required": true
+    },
+    "site_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::site-user.site-user",
+      "inversedBy": "orders"
+    }
+  }
+}
