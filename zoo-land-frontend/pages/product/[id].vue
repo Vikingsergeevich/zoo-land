@@ -1,7 +1,7 @@
 <template>
   <div class="product-page">
     <img
-    class="fit-picture"
+    class="fit-picture container"
     :src= product?.image
     alt="product image"/>
     <h1 class="text-2xl font-bold mb-4">{{ product?.name }}</h1>
@@ -96,5 +96,8 @@ const addToCart = () => {
   padding: 10px 15px;
   border-radius: 5px;
   text-decoration: none;
+}
+.container {
+  max-width: 1200px;
 }
 </style>
