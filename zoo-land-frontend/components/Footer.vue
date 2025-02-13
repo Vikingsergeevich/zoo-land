@@ -1,13 +1,13 @@
 <template>
   <footer class="bg-gray-800 text-white py-6">
     <div class="container mx-auto text-center">
-      <p>&copy;{{ currentYear }} EssenceHub. Все права защищены.</p>
+      <p>&copy;{{ currentYear }} Zooland. Усі права захищені.</p>
       <nav class="mt-4">
         <ul class="flex justify-center space-x-4">
-          <li><a href="/" class="hover:underline">Главная</a></li>
+          <li><a href="/" class="hover:underline">Головна</a></li>
           <li><a href="/catalog" class="hover:underline">Каталог</a></li>
-          <li><a href="/about" class="hover:underline">О нас</a></li>
-          <li><a href="/contact" class="hover:underline">Контакты</a></li>
+          <li><a href="/about" class="hover:underline">Про нас</a></li>
+          <li><a href="/contact" class="hover:underline">Контакти</a></li>
         </ul>
       </nav>
     </div>

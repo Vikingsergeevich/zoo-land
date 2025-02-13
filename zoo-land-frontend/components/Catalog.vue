@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="text-center font-bold text-blue-600">Ароматы ESSENCEHUB</h2>
+    <h2 class="text-center font-bold text-blue-600">Товари ZooLand</h2>
     <div class="product-grid">
       <div v-for="product in products" :key="product.id">
         <ProductCard :product="product" />

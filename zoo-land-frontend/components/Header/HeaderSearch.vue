@@ -3,14 +3,14 @@
     <input 
       type="text" 
       v-model="searchQuery" 
-      placeholder="Искать ароматы..." 
+      placeholder="Шукати товар..." 
       class="border border-gray-300 text-black rounded-l-lg px-4 py-2 w-64 focus:outline-none focus:ring-2 focus:ring-gray-500"
     />
     <button 
       @click="handleSearch" 
       class="bg-green-500 text-white px-4 py-2 rounded-r-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500"
     >
-      Поиск
+      Пошук
     </button>
   </div>
 </template>

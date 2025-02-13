@@ -1,7 +1,19 @@
 <template>
   <div class="product-page">
+    <img
+    class="fit-picture"
+    :src= product?.image
+    alt="product image"/>
     <h1 class="text-2xl font-bold mb-4">{{ product?.name }}</h1>
-    <p class="text-lg">Ціна: {{ product?.price }} USD</p>
+    <p class="text-lg">Ціна:  USD</p>
+    <p class="text-gray-600 mb-4">{{ product?.description }}</p>
+
+    <button
+          class="bg-blue-500 text-white px-4 py-2 rounded-md"
+          @click="addToCart"
+        >
+          Add to Cart
+        </button>
     <router-link to="/" class="back-button">Назад до каталогу</router-link>
   </div>
 </template>
@@ -10,13 +22,21 @@
 import { useRoute } from 'vue-router';
 import { ref, onMounted } from 'vue';
 
+
 const route = useRoute();
 const product = ref(null);
 
 // Заглушка товаров для поиска по ID
 const products = [
-  { id: 1, name: 'Chanel No. 5', price: 100 },
-  { id: 2, name: 'Dior Sauvage', price: 120 },
+  { id: 1, 
+    name: 'Dog',
+    description: 'This is a sample product description for dog.',
+    price: 29.99,
+    image: '/dog.png'},
+  { id: 2, name: 'Dog',
+    description: 'This is a sample product description for cat.',
+    price: 50,
+    image: '/cat.png' },
   { id: 3, name: 'Gucci Bloom', price: 110 },
   { id: 4, name: 'Versace Eros', price: 130 },
   { id: 5, name: 'Dolce & Gabbana Light Blue', price: 90 },
@@ -56,6 +76,10 @@ onMounted(() => {
   const id = Number(route.params.id);
   product.value = products.find((item) => item.id === id);
 });
+
+const addToCart = () => {
+  console.log('Product added to cart');
+};
 </script>
 
 <style scoped>

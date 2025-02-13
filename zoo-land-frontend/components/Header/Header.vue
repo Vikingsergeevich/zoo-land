@@ -8,7 +8,7 @@
 			</span>
     </div>
 		<nuxt-link to="/" ><h1 class="text-6xl font-bold text-blue-600 py-6 underline tracking-widest relative">
-      ESSENCEHUB
+      Z O O L A N D
       <sup class="text-sm absolute top-[-10px] right-[-30px]">®</sup>
     </h1></nuxt-link>
     <HeaderNavbar />
