@@ -8,7 +8,7 @@
     />
     <button 
       @click="handleSearch" 
-      class="bg-green-500 text-white px-4 py-2 rounded-r-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500"
+      class="bg-amber-500 text-gray-600 px-4 py-2 rounded-r-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500"
     >
       Пошук
     </button>
