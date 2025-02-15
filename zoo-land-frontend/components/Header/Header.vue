@@ -3,7 +3,8 @@
     <div>
       <HeaderTopBar />
       <HeaderMainBar />
-      <HeaderNavbar :requestCallback="requestCallback" />
+      <HeaderActionsBar />
+      <!-- <HeaderNavbar :requestCallback="requestCallback" /> -->
     </div>
   </header>
 </template>
@@ -12,10 +13,10 @@
 import HeaderNavbar from './HeaderNavbar.vue';
 import HeaderMainBar from './HeaderMainBar.vue';
 
-// Функція для виклику оператора
-const requestCallback = () => {
-  alert('Наш оператор скоро свяжется с вами!');
-};
+// // Функція для виклику оператора
+// const requestCallback = () => {
+//   alert('Наш оператор скоро свяжется с вами!');
+// };
 </script>
 
 <style scoped>

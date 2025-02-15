@@ -8,6 +8,7 @@
                 <HeaderMenu />
                 <HeaderLocaleSwitcher class="mr-6 lg:ml-auto" />
 				<HeaderPhones />
+				<HeaderAccount class="ml-7"/>
 				<!-- <NuxtLink :to="localePath('/')"> <Logo  /></NuxtLink>
 				<HeaderMenu class="flex-auto px-6 lg:hidden" />
 				<HeaderLocaleSwitcher class="mr-6 lg:ml-auto" />

@@ -1,6 +1,10 @@
 <template>
   <div class="flex items-center">
-	  <template v-if="!isAuth">
+	<div class="flex items-center">
+      <img src="@/assets/icons/user.svg" alt="Місто" class="mr-2 w-4 h-4">
+      <div class="mr-2 border-opacity-50 border-dotted border-grey border-b-2">Увійти</div>
+    </div>
+	  <!-- <template v-if="!isAuth">
 		  <svgUser class="text-grey hover:text-green transition cursor-pointer" alt="user" width="22" @click.prevent="login"/>
 		  <a v-if="!isAuth"
 			 href="#"
@@ -19,30 +23,30 @@
 			>{{ user.fullName }}
 				  </span>
 		  </NuxtLink>
-	  </template>
-  </div>
+	  </template>-->
+  </div> 
 </template>
 
 <script lang="ts">
-import { defineComponent, computed } from '@nuxtjs/composition-api'
-import svgUser from '@/assets/icons/user.svg?inline'
-import useModal from '~/utils/compositions/useModal'
-import { ModalName } from '~/types/modal.enum'
-import {useAccessor} from "~/utils/compositions/useAccessor";
-export default defineComponent({
-  components: { svgUser },
-  setup() {
-  	const accessor = useAccessor()
-	const isAuth = computed(() => accessor.user.isAuth)
-	const user = computed(() => accessor.user.userModel)
-    const login = () => {
-      const { showByName } = useModal()
-      showByName(ModalName.login)
-    }
+// import { defineComponent, computed } from '@nuxtjs/composition-api'
+// import svgUser from '@/assets/icons/user.svg?inline'
+// import useModal from '~/utils/compositions/useModal'
+// import { ModalName } from '~/types/modal.enum'
+// import {useAccessor} from "~/utils/compositions/useAccessor";
+// export default defineComponent({
+//   components: { svgUser },
+//   setup() {
+//   	const accessor = useAccessor()
+// 	const isAuth = computed(() => accessor.user.isAuth)
+// 	const user = computed(() => accessor.user.userModel)
+//     const login = () => {
+//       const { showByName } = useModal()
+//       showByName(ModalName.login)
+//     }
 
-    return { login, isAuth, user }
-  },
-})
+//     return { login, isAuth, user }
+//   },
+// })
 </script>
 
 <style lang="postcss">
