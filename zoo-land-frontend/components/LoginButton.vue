@@ -1,5 +1,5 @@
 <template>
-	<div>
+    <div>
       <!-- Якщо користувач не авторизований, показуємо кнопку -->
       <div v-if="!isAuth" class="cursor-pointer" @click="openLoginModal">
         <img src="/assets/icons/user.svg" alt="user" class="inline mr-2 w-4 h-4" />
@@ -16,6 +16,7 @@
   </template>
   
   <script setup lang="ts">
+  import { computed } from 'vue';
   import { useModal } from '~/composables/useModal';
   import { useAccessor } from '~/composables/useAccessor';
   import { ModalName } from '@/types/modals.enum';
@@ -24,11 +25,11 @@
   const { isAuth, user } = useAccessor();
   
   const openLoginModal = () => {
-	showByName(ModalName.login);
+    showByName(ModalName.login);
   };
   </script>
   
-  <style scoped lang="postcss">
-  /* Додаткові стилі, якщо необхідно */
+  <style scoped>
+  /* Додаткові стилі, якщо потрібно */
   </style>
   

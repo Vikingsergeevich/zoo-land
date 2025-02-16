@@ -1,5 +1,5 @@
 <template>
-  <header class="header bg-white py-3 w-full relative">
+  <header class="header py-3 w-full relative">
     <div>
       <HeaderTopBar />
       <HeaderMainBar />

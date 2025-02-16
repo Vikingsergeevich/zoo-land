@@ -1,5 +1,5 @@
 <template>
-  <div class="btn-green w-[300px] lg:w-[250px] btn-green--shadow">
+  <div class="flex items-center bg-yellow-600 w-[300px] lg:w-[250px]">
     <img src="@/assets/icons/burger.svg" width="20" class="mr-4">
     <div class="font-bold">Каталог</div>
     <img src="@/assets/icons/arrow_down.svg"

@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 .container {
-    max-width: calc(100vw - 200px);
+    max-width: calc(100vw - 400px);
     margin-left: auto;
     margin-right: auto;
   }
+
+  

@@ -1,9 +1,9 @@
 <template>
-	<div class="bg-white border-b border-grey-light">
+	<div class="bg-gray-800 border-b border-grey-light">
 		<div class="container">
 			<div class="flex items-center py-2.5 relative">
 				<HeaderCatalogBtn
-					class="mr-8"
+					class="hover:bg-amber-500 hover:shadow-lg px-4 py-2 rounded-md"
 				/>
 				<HeaderSearch class="flex-grow" />
 				<HeaderFeatureBtns
