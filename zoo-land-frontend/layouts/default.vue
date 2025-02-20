@@ -2,7 +2,7 @@
   <!-- Весь вміст у контейнері з боковими відступами -->
   <div class="min-h-screen flex flex-col ">
     <Header />
-    <!-- <LoginModal /> -->
+    <LoginModal />
     <main class="flex-grow">
       <NuxtPage />
     </main>
@@ -13,7 +13,7 @@
 <script setup>
 import Header from '~/components/Header/Header.vue'
 import Footer from '~/components/Footer/Footer.vue'
-// import LoginModal from '~/components/Modal/LoginModal.vue';
+import LoginModal from '~/components/Modals/LoginModal.vue';
 </script>
 
 <style scoped>
