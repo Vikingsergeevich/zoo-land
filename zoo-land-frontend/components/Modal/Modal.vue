@@ -1,8 +1,8 @@
 <template>
     <Teleport to="body">
       <div v-if="isOpen" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-        <div class="bg-white p-6 rounded-lg shadow-lg relative w-96">
-          <button class="absolute top-2 right-2 text-gray-500 hover:text-gray-800" @click="closeModal">✖</button>
+        <div class="bg-transparent p-6 rounded-lg relative w-96">
+          <!-- <button class="absolute top-2 right-2 text-gray-500 hover:text-gray-800" @click="closeModal">✖</button> -->
           <slot></slot>
         </div>
       </div>

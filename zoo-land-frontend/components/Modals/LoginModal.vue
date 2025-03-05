@@ -1,10 +1,15 @@
 <template>
   <Modal v-model="isOpen">
+    <button class="absolute top-8 right-2 text-amber-600 hover:text-amber-500" @click="closeModal">❎</button>
     <div class="w-96 p-6 bg-white rounded-md shadow-md">
       <h2 class="text-xl font-bold mb-4">Вхід</h2>
+      
       <!-- Форма логіну -->
       <form @submit.prevent="handleLogin">
+        
+        
         <div class="mb-4">
+          
           <label class="block mb-1" for="email">Email</label>
           <input v-model="email" type="email" id="email" class="w-full border px-3 py-2 rounded" required />
         </div>
