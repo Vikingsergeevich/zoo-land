@@ -11,4 +11,27 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  nitro: {
+    devProxy: {
+      '/api': {
+        target: 'http://zoo-land-backend:1337',
+        changeOrigin: true
+      },
+      '/admin': {
+        target: 'http://zoo-land-backend:1337',
+        changeOrigin: true
+      }
+    }
+  },
+  vite: {
+    server: {
+      host: '0.0.0.0',
+      port: 3000,
+      strictPort: true,
+      hmr: {
+        host: 'localhost'
+      },
+      allowedHosts: ['zoo-land-frontend']
+    }
+  }
 })

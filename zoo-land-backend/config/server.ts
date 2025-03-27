@@ -4,4 +4,9 @@ export default ({ env }) => ({
   app: {
     keys: env.array('APP_KEYS'),
   },
+  url: env('URL', 'http://localhost'),
+  admin: {
+    url: env('ADMIN_URL', 'http://localhost/admin'),
+    serveAdminPanel: true,
+  },
 });

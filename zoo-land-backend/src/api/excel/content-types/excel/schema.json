@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "excels",
+  "info": {
+    "singularName": "excel",
+    "pluralName": "excels",
+    "displayName": "Excel",
+    "description": "Загрузка и обработка Excel файлов"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "data": {
+      "type": "json",
+      "private": true
+    }
+  }
+} 
