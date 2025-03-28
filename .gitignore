@@ -15,7 +15,6 @@ out/
 # Misc
 .DS_Store
 *.pem
-.env
 .env.local
 .env.development.local
 .env.test.local
@@ -49,4 +48,38 @@ docker-compose.override.yml
 .zoo-land-backend/.env.production.local
 
 # MySQL
-mysql-data/ 
+mysql-data/
+
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# Logs
+logs
+*.log
+
+# Local env files
+.env.local
+.env.*.local
+
+# Editor directories and files
+.DS_Store
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Strapi
+.strapi-updater.json
+license.txt
+exports
+*.cache
+build
+.strapi 

@@ -6,7 +6,7 @@
 
 - Docker
 - Docker Compose
-- Node.js (для локальной разработки)
+- Git
 
 ## Установка
 
@@ -15,13 +15,6 @@
 git clone https://github.com/your-username/zoo-land.git
 cd zoo-land
 ```
-
-2. Создайте файл `.env` на основе `.env.example`:
-```bash
-cp .env.example .env
-```
-
-3. Отредактируйте файл `.env`, установив свои значения для паролей и URL.
 
 ## Запуск
 
@@ -36,6 +29,12 @@ docker-compose up -d
 - Фронтенд: http://localhost
 - Админ-панель Strapi: http://localhost/admin
 - phpMyAdmin: http://localhost:8080
+
+## Первый запуск Strapi
+
+1. При первом запуске перейдите по адресу http://localhost/admin/auth/register-admin
+2. Создайте первого администратора, заполнив форму регистрации
+3. После регистрации вы будете перенаправлены в админ-панель
 
 ## Разработка
 
@@ -65,6 +64,15 @@ docker-compose down
 ```bash
 docker-compose down -v
 ```
+
+## Возможные проблемы
+
+1. Если возникает ошибка с портом 3306, это означает, что у вас уже запущен MySQL локально. В этом случае измените порт в `docker-compose.yml` на другой (например, 3307).
+
+2. Если не работает админ-панель Strapi, проверьте:
+   - Все ли контейнеры запущены: `docker-compose ps`
+   - Логи бэкенда: `docker-compose logs zoo-land-backend`
+   - Логи nginx: `docker-compose logs nginx`
 
 ## Лицензия
 
