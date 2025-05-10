@@ -8,9 +8,9 @@
     />
     <button 
       @click="handleSearch" 
-      class="bg-green-500 text-white px-4 py-2 rounded-r-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500"
+      class="bg-amber-500 text-gray-600 px-4 py-2 rounded-r-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500"
     >
-      Пошук
+      <img src="@/assets/icons/search.svg" alt="Пошук" class="mr-2 w-4 h-4">
     </button>
   </div>
 </template>
@@ -21,7 +21,7 @@ import { ref } from 'vue';
 // Реактивная переменная для хранения значения поиска
 const searchQuery = ref('');
 
-// Функция обработки поиска
+// Функция обработки поиска 
 const handleSearch = () => {
   console.log('Искать:', searchQuery.value);
   // Здесь можно добавить логику для обработки поиска

@@ -30,13 +30,13 @@ defineProps({
   display: inline-block;
   margin-top: 10px;
   padding: 8px 12px;
-  background-color: #27ae60;
+  background-color: #FFB300;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
 }
 
 .details-button:hover {
-  background-color: #219150;
+  background-color: #FFB300;
 }
 </style>

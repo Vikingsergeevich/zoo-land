@@ -17,7 +17,7 @@ const toggle = () => {
 </script>
 
 <style scoped>
-.header-burger {
+/* .header-burger {
   @apply h-5 w-7 cursor-pointer relative;
 }
 
@@ -47,5 +47,5 @@ const toggle = () => {
 
 .header-burger.active span:nth-child(3) {
   @apply transform rotate-[135deg] top-[9px];
-}
+} */
 </style>
